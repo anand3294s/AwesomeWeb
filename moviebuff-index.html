@@ -8,6 +8,10 @@
       body {
         font-family: Tw Cen MT;
       }
+      #mandatory-tag {
+        font-style: italic;
+        color: red;
+      }
     </style>
   </head>
   <body>
@@ -16,12 +20,20 @@
     <form action="moviebuff-success.html">
       <div>
         <label for="username-id">Name:</label>
+        <label id="mandatory-tag">*</label>
         <input type="text" name="username-id" required />
       </div>
 
       <div>
         <label for="email-id">Email</label>
-        <input type="email" name="email" id="email-id" required />
+        <label id="mandatory-tag">*</label>
+        <input
+          type="email"
+          name="email"
+          id="email-id"
+          required
+          maxlength="20"
+        />
       </div>
 
       <div>
@@ -35,10 +47,12 @@
       </div>
       <div>
         <label for="fav-movie">Your favorite movie</label>
+        <label id="mandatory-tag">*</label>
         <input type="text" class="fav-movie" required />
       </div>
       <div>
         <label for="fav-song">Your favorite song</label>
+        <label id="mandatory-tag">*</label>
         <input type="text" class="fav-song" />
       </div>
       <div>
@@ -49,6 +63,11 @@
           id="remarks-id"
           placeholder="Enter your remarks"
         />
+      </div>
+
+      <div>
+        <label for="upload-file-id">Upload file</label>
+        <input type="file" name="upload-file" id="upload-file-id" />
       </div>
 
       <button type="reset">Clear Info</button>
