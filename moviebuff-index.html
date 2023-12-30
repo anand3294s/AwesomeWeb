@@ -13,20 +13,37 @@
   <body>
     <h1>Please provide your inputs on the folow!</h1>
     <p>your feedback is important to us!</p>
-    <form action="">
+    <form action="moviebuff-success.html">
       <div>
         <label for="username-id">Name:</label>
-        <input type="text" name="username-id" />
+        <input type="text" name="username-id" required />
       </div>
 
       <div>
         <label for="email-id">Email</label>
-        <input type="email" name="email" id="email-id" />
+        <input type="email" name="email" id="email-id" required />
       </div>
 
       <div>
         <label for="date-of-birth-id">Date of Birth</label>
-        <input type="date" name="date-of-birth" id="date-of-birth-id" />
+        <input
+          type="date"
+          name="date-of-birth"
+          id="date-of-birth-id"
+          required
+        />
+      </div>
+      <div>
+        <label for="fav-movie">Your favorite movie</label>
+        <input type="text" class="fav-movie" required />
+      </div>
+      <div>
+        <label for="fav-song">Your favorite song</label>
+        <input type="text" class="fav-song" />
+      </div>
+      <div>
+        <label for="remarks-id">Remarks</label>
+        <input type="text" name="remarks" id="remarks-id" />
       </div>
 
       <button type="submit">Submit</button>
