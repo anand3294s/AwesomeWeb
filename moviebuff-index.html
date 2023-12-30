@@ -16,7 +16,7 @@
   </head>
   <body>
     <h1>Please provide your inputs on the folow!</h1>
-    <p>your feedback is important to us!</p>
+    <p>Your feedback is important to us!</p>
     <form action="moviebuff-success.html">
       <div>
         <label for="username-id">Name:</label>
@@ -33,6 +33,25 @@
           id="email-id"
           required
           maxlength="20"
+        />
+      </div>
+      <div>
+        <label for="">Gender</label>
+        <label id="mandatory-tag">*</label>
+        <input type="radio" name="gender" value="male" id="male" required />
+        <label for="">Male</label>
+        <input type="radio" name="gender" value="female" id="female" />
+        <label for="">Female</label>
+      </div>
+
+      <div>
+        <label for="mobilenumber-id">Mobile Number</label>
+        <label id="mandatory-tag">*</label>
+        <input
+          type="tel"
+          name="mobilenumber"
+          id="mobilenumber-id"
+          pattern="[0-9]{10}"
         />
       </div>
 
@@ -55,14 +74,32 @@
         <label id="mandatory-tag">*</label>
         <input type="text" class="fav-song" />
       </div>
+
       <div>
-        <label for="remarks-id">Remarks</label>
-        <input
-          type="text"
-          name="remarks"
-          id="remarks-id"
-          placeholder="Enter your remarks"
-        />
+        <label for="playgames">Do you play games?</label>
+        <label id="mandatory-tag">*</label>
+        <select name="playgames" id="playgames" required>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+          <option value="want">I want to</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="things-own">Things you own</label>
+        <select name="things-own" id="things-own" multiple>
+          <option value="Phone">Phone</option>
+          <option value="Playstation">Playstation</option>
+          <option value="laptop">Laptop</option>
+          <option value="tv">TV</option>
+          <option value="fridge">Fridge</option>
+          <option value="washing-machine">Washing Machine</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="enter-remakrs-id">Remarks</label>
+        <textarea name="enter-remakrs" id="enter-remakrs-id"></textarea>
       </div>
 
       <div>
@@ -70,8 +107,13 @@
         <input type="file" name="upload-file" id="upload-file-id" />
       </div>
 
-      <button type="reset">Clear Info</button>
+      <div>
+        <label for="agree-terms">I agree to the terms</label>
+        <label id="mandatory-tag"></label>
+        <input type="checkbox" name="agree-terms" id="agree-terms" required />
+      </div>
 
+      <button type="reset">Clear Info</button>
       <button type="submit">Submit</button>
     </form>
   </body>
