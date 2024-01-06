@@ -4,28 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Submit your Feedback!</title>
-    <style>
-      body {
-        font-family: Tw Cen MT;
-      }
-      #mandatory-tag {
-        font-style: italic;
-        color: red;
-      }
-    </style>
+    <link rel="stylesheet" href="moviebuff.css" />
   </head>
   <body>
-    <h1>Please provide your inputs on the folow!</h1>
-    <p>Your feedback is important to us!</p>
+    <h1>
+      Please provide your inputs on the folow!
+      <img src="ImagesPack/Microsoft_Forms.png" alt="form logo" />
+    </h1>
+    <p>
+      Your feedback is important to us! <br />
+      Thank you for your participation. <br />
+      The purpose of this questionnaire is to collect your feedback, which will
+      help us improve this event in the future. <br />
+      All information will remain confidential.
+    </p>
     <form action="moviebuff-success.html">
       <div>
-        <label for="username-id">Name:</label>
+        <label class="align-ele" for="username-id">Name</label>
         <label id="mandatory-tag">*</label>
         <input type="text" name="username-id" required />
       </div>
 
       <div>
-        <label for="email-id">Email</label>
+        <label class="align-ele" for="email-id">Email</label>
         <label id="mandatory-tag">*</label>
         <input
           type="email"
@@ -36,7 +37,7 @@
         />
       </div>
       <div>
-        <label for="">Gender</label>
+        <label class="align-ele" for="">Gender</label>
         <label id="mandatory-tag">*</label>
         <input type="radio" name="gender" value="male" id="male" required />
         <label for="">Male</label>
@@ -45,7 +46,7 @@
       </div>
 
       <div>
-        <label for="mobilenumber-id">Mobile Number</label>
+        <label class="align-ele" for="mobilenumber-id">Mobile Number</label>
         <label id="mandatory-tag">*</label>
         <input
           type="tel"
@@ -56,7 +57,7 @@
       </div>
 
       <div>
-        <label for="date-of-birth-id">Date of Birth</label>
+        <label class="align-ele" for="date-of-birth-id">Date of Birth</label>
         <input
           type="date"
           name="date-of-birth"
@@ -65,18 +66,18 @@
         />
       </div>
       <div>
-        <label for="fav-movie">Your favorite movie</label>
+        <label class="align-ele" for="fav-movie">Your favorite movie</label>
         <label id="mandatory-tag">*</label>
         <input type="text" class="fav-movie" required />
       </div>
       <div>
-        <label for="fav-song">Your favorite song</label>
+        <label class="align-ele" for="fav-song">Your favorite song</label>
         <label id="mandatory-tag">*</label>
         <input type="text" class="fav-song" />
       </div>
 
       <div>
-        <label for="playgames">Do you play games?</label>
+        <label class="align-ele" for="playgames">Do you play games?</label>
         <label id="mandatory-tag">*</label>
         <select name="playgames" id="playgames" required>
           <option value="Yes">Yes</option>
@@ -86,7 +87,7 @@
       </div>
 
       <div>
-        <label for="things-own">Things you own</label>
+        <label class="align-ele" for="things-own">Things you own</label>
         <select name="things-own" id="things-own" multiple>
           <option value="Phone">Phone</option>
           <option value="Playstation">Playstation</option>
@@ -98,17 +99,17 @@
       </div>
 
       <div>
-        <label for="enter-remakrs-id">Remarks</label>
+        <label class="align-ele" for="enter-remakrs-id">Remarks</label>
         <textarea name="enter-remakrs" id="enter-remakrs-id"></textarea>
       </div>
 
       <div>
-        <label for="upload-file-id">Upload file</label>
+        <label class="align-ele" for="upload-file-id">Upload file</label>
         <input type="file" name="upload-file" id="upload-file-id" />
       </div>
 
       <div>
-        <label for="agree-terms">I agree to the terms</label>
+        <label class="align-ele" for="agree-terms">I agree to the terms</label>
         <label id="mandatory-tag"></label>
         <input type="checkbox" name="agree-terms" id="agree-terms" required />
       </div>
@@ -116,6 +117,6 @@
       <button type="reset">Clear Info</button>
       <button type="submit">Submit</button>
     </form>
-    <!-- Nothing to work to today-->-->
+    <!-- Nothing to work to today-->
   </body>
 </html>

@@ -1,0 +1,54 @@
+body {
+    font-family: Tw Cen MT;
+    background-color:rgb(247, 245, 245) ;
+    background-image: url(ImagesPack/background1.jpg);
+    background-blend-mode: color;
+  }
+  #mandatory-tag {
+    font-style: italic;
+    color: red;
+  }
+
+button{
+ cursor: pointer;
+ border-radius: 5px;
+border-width: 1px;
+ border-color: black;
+ text-transform: capitalize;
+ background-color: white;
+}
+
+  button:hover{
+    background-color: orange;
+  }
+
+  button:active{
+    box-shadow: orange 0px 7px 20px 0px;
+    transform: translateY(10x);
+  }
+
+  p{
+    background-color: blueviolet;
+    color: white;
+    margin: auto;
+    width: 99%;
+  }
+
+  img{
+    width: 80px;
+    height: 50px;
+  }
+  form{
+    display: table;
+  }  
+
+  .align-ele{
+    display: table-cell;
+  }
+
+  input{
+    display: table-cell;
+  }
+  div{
+    display: table-row;
+  }
