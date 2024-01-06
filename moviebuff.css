@@ -31,12 +31,17 @@ button:active {
 }
 
 p.main-html {
-  background-color: blueviolet;
-  color: white;
+  /* background-color: blueviolet; */
+  background-color: #ffd6ff;
+  color: black;
   margin: auto;
-  width: 99%;
   font-style: italic;
   padding: 10px;
+  border-radius: 5px;
+  width: fit-content;
+  /* float: left; */
+  border-style: solid;
+  border-width: 1px;
 }
 
 img {
