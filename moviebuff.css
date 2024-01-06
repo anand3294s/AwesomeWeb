@@ -48,7 +48,14 @@ border-width: 1px;
 
   input{
     display: table-cell;
+    margin: 5px;
   }
   div{
     display: table-row;
+  }
+  select{
+    margin: 5px;
+  }
+  textarea{
+    margin: 5px;
   }
