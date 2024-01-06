@@ -15,7 +15,10 @@ button {
   border-width: 1px;
   border-color: black;
   text-transform: capitalize;
-  background-color: white;
+  background-color: blueviolet;
+  color: white;
+  position: relative;
+  left: 1200px;
 }
 
 button:hover {
@@ -32,6 +35,8 @@ p.main-html {
   color: white;
   margin: auto;
   width: 99%;
+  font-style: italic;
+  padding: 10px;
 }
 
 img {
@@ -86,4 +91,12 @@ div.submission-success a {
 div.submission-success img {
   width: 100px;
   height: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+a:hover {
+  color: green;
 }
