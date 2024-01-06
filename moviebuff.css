@@ -1,61 +1,89 @@
 body {
-    font-family: Tw Cen MT;
-    background-color:rgb(247, 245, 245) ;
-    background-image: url(ImagesPack/background1.jpg);
-    background-blend-mode: color;
-  }
-  #mandatory-tag {
-    font-style: italic;
-    color: red;
-  }
-
-button{
- cursor: pointer;
- border-radius: 5px;
-border-width: 1px;
- border-color: black;
- text-transform: capitalize;
- background-color: white;
+  font-family: Tw Cen MT;
+  background-color: rgb(247, 245, 245);
+  background-image: url(ImagesPack/background1.jpg);
+  background-blend-mode: color;
+}
+#mandatory-tag {
+  font-style: italic;
+  color: red;
 }
 
-  button:hover{
-    background-color: orange;
-  }
+button {
+  cursor: pointer;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: black;
+  text-transform: capitalize;
+  background-color: white;
+}
 
-  button:active{
-    box-shadow: orange 0px 7px 20px 0px;
-    transform: translateY(10x);
-  }
+button:hover {
+  background-color: orange;
+}
 
-  p{
-    background-color: blueviolet;
-    color: white;
-    margin: auto;
-    width: 99%;
-  }
+button:active {
+  box-shadow: orange 0px 7px 20px 0px;
+  transform: translateY(10x);
+}
 
-  img{
-    width: 80px;
-    height: 50px;
-  }
-  form{
-    display: table;
-  }  
+p.main-html {
+  background-color: blueviolet;
+  color: white;
+  margin: auto;
+  width: 99%;
+}
 
-  .align-ele{
-    display: table-cell;
-  }
+img {
+  width: 80px;
+  height: 50px;
+}
+form {
+  display: table;
+}
 
-  input{
-    display: table-cell;
-    margin: 5px;
-  }
-  div{
-    display: table-row;
-  }
-  select{
-    margin: 5px;
-  }
-  textarea{
-    margin: 5px;
-  }
+.align-ele {
+  display: table-cell;
+}
+
+input {
+  display: table-cell;
+  margin: 5px;
+}
+div.main-home-div {
+  display: table-row;
+}
+select {
+  margin: 5px;
+}
+textarea {
+  margin: 5px;
+}
+
+div.submission-success {
+  background-color: blueviolet;
+  text-align: center;
+  color: whitesmoke;
+  border-radius: 10px;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+}
+
+div.submission-success h4 {
+  margin: 30px 30px;
+}
+
+div.submission-success a {
+  margin: 10px 10px;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+}
+
+div.submission-success img {
+  width: 100px;
+  height: 100px;
+}
