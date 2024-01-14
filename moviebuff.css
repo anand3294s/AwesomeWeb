@@ -2,7 +2,7 @@ body {
   font-family: Tw Cen MT;
   background-color: rgb(247, 245, 245);
   background-image: url(ImagesPack/background1.jpg);
-  background-blend-mode: color;
+  background-blend-mode: overlay;
 }
 #mandatory-tag {
   font-style: italic;
@@ -17,7 +17,7 @@ button {
   text-transform: capitalize;
   background-color: blueviolet;
   color: white;
-  position: relative;
+  /* position: relative; */
   left: 1200px;
 }
 
@@ -39,12 +39,15 @@ p.main-html {
   padding: 10px;
   border-radius: 5px;
   width: fit-content;
-  /* float: left; */
+  float: left;
   border-style: solid;
   border-width: 1px;
 }
+.clr {
+  clear: both;
+}
 
-img {
+img.img-logo {
   width: 80px;
   height: 50px;
 }
@@ -104,9 +107,34 @@ a {
 }
 a:hover {
   color: green;
+  cursor: pointer;
 }
 
 nav {
-  position: sticky;
+  position: fixed;
+  width: auto;
   top: 0;
+}
+
+.bottom-notes {
+  float: left;
+  width: 50%;
+}
+
+img.bottom-notes {
+  width: 300px;
+  height: 200px;
+}
+
+.subcontainer-details {
+  display: flexbox;
+  width: 20%;
+  float: left;
+  border: 3px solid blueviolet;
+  background-color: aquamarine;
+  border-radius: 5px;
+  height: 200px;
+  margin: 5px;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
