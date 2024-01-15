@@ -1,5 +1,6 @@
 body {
   font-family: Tw Cen MT;
+  /* font-family: Montserrat; */
   background-color: rgb(247, 245, 245);
   background-image: url(ImagesPack/background1.jpg);
   background-blend-mode: overlay;
@@ -124,6 +125,7 @@ nav {
 img.bottom-notes {
   width: 300px;
   height: 200px;
+  clip-path: circle();
 }
 
 .subcontainer-details {
@@ -133,8 +135,32 @@ img.bottom-notes {
   border: 3px solid blueviolet;
   background-color: aquamarine;
   border-radius: 5px;
-  height: 200px;
+  height: 230px;
   margin: 5px;
   justify-content: space-between;
   box-sizing: border-box;
+  overflow: auto;
+  padding: 5px;
+}
+
+audio {
+  padding: 10px;
+  border-radius: 30px;
+}
+
+video {
+  float: left;
+  height: 400px;
+  width: 700px;
+  margin: 10px;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+iframe {
+  border-radius: 10px;
+}
+
+#more-details-list li {
+  list-style: square;
 }
